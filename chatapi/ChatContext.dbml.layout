@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ChatContext">
+  <DataContextMoniker Name="/ChatContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e3f6012e-739c-4b06-af0d-84df910fdee8" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ChatContextDataContext/Conversation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53f7c7b9-1257-407e-b0fe-62232dfb0b4d" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d33c1e66-9121-47cf-ab31-fe9eaccfc2ca" absoluteBounds="3.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ChatContextDataContext/TblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="115a2140-1282-429d-a942-9da95de8d4f5" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ef0dfe2-f726-4043-93ac-2c05006f47db" absoluteBounds="0.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ChatContextDataContext/ConversationReply" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1b9e153-e9da-4623-946e-941e80362f36" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
