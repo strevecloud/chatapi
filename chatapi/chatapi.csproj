@@ -302,6 +302,7 @@
     <Compile Include="Controllers\ChatController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PusherController.cs" />
     <Compile Include="Controllers\Token.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -312,6 +313,7 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AuthPusher.cs" />
     <Compile Include="Models\MdChat.cs" />
     <Compile Include="Models\MdConversation.cs" />
     <Compile Include="Models\MdConversationReply.cs" />

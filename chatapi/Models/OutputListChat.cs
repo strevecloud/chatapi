@@ -7,17 +7,18 @@ namespace chatapi.Models
 {
     public class OutputListChat
     {
+        public string NameLogin { get; set; }
+        public List<ChatOutput> ListChat { get; set; }
+    }
+    public class ChatOutput
+    {
+        public string Name { get; set; }
         public int From_Id { get; set; }
         public int To_Id { get; set; }
-        public string Chat { get; set; }
-        public string LastMessage { get; set; }
-        public string LastDate { get; set; }
-        public string UserFrom { get; set; }
-        public string UserTo { get; set; }
-        public string Avatar { get; set; }
+        public int Con_Id { get; set; }
+        public string Reply { get; set; }
+        public string Timestamp { get; set; }
+        public string Photo { get; set; }
+        public string Name2 { get; set; }
     }
-}
-public class ChatList
-{
-
 }

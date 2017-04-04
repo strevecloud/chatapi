@@ -15,7 +15,6 @@ namespace chatapi.Models
         public int Con_Id { get; set; }
         public string NameLogin { get; set; }
         public int From_Id { get; set; }
-        public string To_Name { get; set; }
         public List<Message> Messages { get; set; }
     }
 

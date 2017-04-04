@@ -94,6 +94,13 @@ namespace chatapi
 				return this.GetTable<ConversationReply>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GetlastChat")]
+		public ISingleResult<GetlastChatResult> GetlastChat([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> iduser)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iduser);
+			return ((ISingleResult<GetlastChatResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Conversation")]
@@ -590,6 +597,158 @@ namespace chatapi
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	public partial class GetlastChatResult
+	{
+		
+		private string _Name;
+		
+		private string _Name2;
+		
+		private string _Photo;
+		
+		private int _Con_Id;
+		
+		private string _Reply;
+		
+		private string _Timestamp;
+		
+		private int _From_Id;
+		
+		private int _To_Id;
+		
+		public GetlastChatResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this._Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name2", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Name2
+		{
+			get
+			{
+				return this._Name2;
+			}
+			set
+			{
+				if ((this._Name2 != value))
+				{
+					this._Name2 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Photo", DbType="NChar(10)")]
+		public string Photo
+		{
+			get
+			{
+				return this._Photo;
+			}
+			set
+			{
+				if ((this._Photo != value))
+				{
+					this._Photo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Con_Id", DbType="Int NOT NULL")]
+		public int Con_Id
+		{
+			get
+			{
+				return this._Con_Id;
+			}
+			set
+			{
+				if ((this._Con_Id != value))
+				{
+					this._Con_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Reply", DbType="Text NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string Reply
+		{
+			get
+			{
+				return this._Reply;
+			}
+			set
+			{
+				if ((this._Reply != value))
+				{
+					this._Reply = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Timestamp", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Timestamp
+		{
+			get
+			{
+				return this._Timestamp;
+			}
+			set
+			{
+				if ((this._Timestamp != value))
+				{
+					this._Timestamp = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_From_Id", DbType="Int NOT NULL")]
+		public int From_Id
+		{
+			get
+			{
+				return this._From_Id;
+			}
+			set
+			{
+				if ((this._From_Id != value))
+				{
+					this._From_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_To_Id", DbType="Int NOT NULL")]
+		public int To_Id
+		{
+			get
+			{
+				return this._To_Id;
+			}
+			set
+			{
+				if ((this._To_Id != value))
+				{
+					this._To_Id = value;
+				}
 			}
 		}
 	}
